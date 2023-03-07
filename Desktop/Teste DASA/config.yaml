@@ -1,0 +1,21 @@
+---
+# A sample yaml file
+project_id: poc-dasa-migra-databricks
+bucket_name: dataproc-bucket-dasa-teste
+cluster:
+  name: 'cluster-00f4'
+  num_workers: 0
+  storage_bucket: dataproc-6mar-cluster
+  num_masters: 1
+  master_machine_type: n2-standard-4
+  master_disk_type: pd-standard
+  master_disk_size: 500
+  worker_machine_type: n2-standard-4
+  worker_disk_type: pd-standard
+  worker_disk_size: 500
+  idle_delete_ttl: 300
+region: us-central1  
+zone: us-central1-f
+log_filename: log.txt
+bucket_padrao: dataproc-bucket-dasa-teste
+name_data_path: /dags/args/config.yaml
